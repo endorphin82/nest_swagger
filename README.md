@@ -41,6 +41,9 @@ $ npm run start
 # watch mode
 $ npm run start:dev
 
+# docker-compose mode
+$ docker-compose -f docker-compose.dev.yml up
+
 # production mode
 $ npm run start:prod
 ```
