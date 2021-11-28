@@ -1,0 +1,22 @@
+version: "3"
+
+services:
+  nestbackend:
+    build:
+      context: .
+      dockerfile: ./dev/Dockerfile
+    volumes:
+      - ./:/usr/src/app
+      - /usr/src/app/node_modules
+    environment:
+      - NODE_ENV=development
+    container_name: nestbackend
+    restart: always
+    ports:
+      - '3000:3000'
+    networks:
+      - back_db
+
+networks:
+  back_db:
+    driver: bridge
