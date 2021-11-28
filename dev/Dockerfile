@@ -6,5 +6,5 @@ RUN yarn
 #healthcheck
 #RUN apk add curl
 
-EXPOSE 3000
+#EXPOSE 3002
 CMD [ "yarn", "run", "start:dev" ]

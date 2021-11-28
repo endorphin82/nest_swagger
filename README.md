@@ -42,7 +42,7 @@ $ npm run start
 $ npm run start:dev
 
 # docker-compose mode
-$ docker-compose -f docker-compose.dev.yml up
+$ npm run start:docker:dev
 
 # production mode
 $ npm run start:prod

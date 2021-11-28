@@ -13,7 +13,7 @@ services:
     container_name: nestbackend
     restart: always
     ports:
-      - '3000:3000'
+      - '3002:3002'
     networks:
       - back_db
 
